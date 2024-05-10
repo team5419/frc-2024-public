@@ -1,0 +1,49 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7044660001973981,
+      "y": 4.467769383467099
+    },
+    "rotation": -61.93389060323478
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "TrackSpeaker"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "RequestInterpolate"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "RequestShoot"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "RequestIntake"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "0-Taxi"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

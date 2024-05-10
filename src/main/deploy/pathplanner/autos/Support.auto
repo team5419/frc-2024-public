@@ -1,0 +1,141 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.4583282994872255,
+      "y": 4.056676883655391
+    },
+    "rotation": -59.31482691040483
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "sequential",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "TrackSpeaker"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 1.0
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "RequestInterpolate"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "RequestShoot"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "RequestIntake"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "TrackPath"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "0-4"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "sequential",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "TrackSpeaker"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "RequestInterpolate"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "4-Shoot"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "RequestShoot"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "RequestIntake"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "TrackPath"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "Shoot-3-Support"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "3-Shoot-Supoprt"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "TrackSpeaker"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "RequestInterpolate"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "RequestShoot"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

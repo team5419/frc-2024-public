@@ -1,0 +1,114 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.2069872572793579,
+      "y": 4.151424827066179
+    },
+    "rotation": 0.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "deadline",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "0-Twist"
+                }
+              },
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "enable"
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "FirstShoot"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "disable"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "Twist-8"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "AutoShoot"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "8-7"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "enable"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "AutoShoot"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "7-6"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

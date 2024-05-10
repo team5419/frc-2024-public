@@ -1,0 +1,55 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.730512666699092,
+      "y": 4.439424481685842
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "RequestInterpolate"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "TrackSpeaker"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "RequestShoot"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "RequestIntake"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "TrackPath"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "0-5"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

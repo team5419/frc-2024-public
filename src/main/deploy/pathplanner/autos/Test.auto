@@ -1,0 +1,73 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 2,
+      "y": 2
+    },
+    "rotation": 0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "2-Shoot"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "0-8Subwoofer"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "0-ShootSideAltered"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "2-3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "7-0"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "TEST"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "0-Taxi"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "0-Taxi-top"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Shoot-8"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
