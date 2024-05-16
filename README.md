@@ -88,7 +88,7 @@ The robot has a series of 3 beam break sensors to detect the location of a note 
 
 
 ### Swerve
-We chose to use CTRE's swerve API this year. To control it, we used a 1678 style state machine, barring a few commands like auto align. We use the CTRE odometry fused with vision updates from an Oranges/ Pi 5 running PhotonVision for localization. We chose to package our vision in the swerve file, as it's the only place we use our vision readouts. 
+We chose to use CTRE's swerve API this year. To control it, we used a 1678 style state machine, barring a few commands like auto align. We use the CTRE odometry fused with vision updates from an Orange Pi 5 running PhotonVision for localization. We chose to package our vision in the swerve file, as it's the only place we use our vision readouts. 
 
 **States**
 - IDLE
